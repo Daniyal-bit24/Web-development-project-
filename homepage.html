@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Small Wins Tracker - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="Images/logo.PNG" alt="Logo" />
+      
+    </div>
+    <div class="links">
+      <a href="homepage.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="wins.html">Wins</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <h1 class="heading">Small Wins</h1>
+  <p class="subheading">Celebrate Your Small Wins, One Step at a Time</p>
+
+  <!-- 💬 Motivational Image -->
+  <div class="quote-image-container">
+    <img src="Images/Homepage photo.png" alt="Motivational Quote" class="quote-image" />
+  </div>
+
+  <!-- ADD WIN & REMINDER SECTION -->
+  <div class="container">
+    <div class="box">
+      <h2>Add Win</h2>
+      <input type="text" id="winTitle" placeholder="Win Title" />
+      <input type="date" id="winDate" />
+      <button onclick="addWin()">Add Win</button>
+    </div>
+
+    <div class="box">
+      <h2>Add Reminder</h2>
+      <input type="text" id="reminderTitle" placeholder="Reminder Title" />
+      <input type="date" id="reminderDate" />
+      <button onclick="addReminder()">Add Reminder</button>
+    </div>
+  </div>
+
+  <!-- WEEKLY PROGRESS SECTION -->
+  <div class="container">
+    <div class="progress-card">
+      <h2>Weekly Win Progress</h2>
+      <div class="progress-bar">
+        <div class="fill" id="winProgress"></div>
+      </div>
+      <p id="winProgressText">You’ve completed 0 of 7 wins this week</p>
+    </div>
+
+    <div class="progress-card">
+      <h2>Weekly Reminder Progress</h2>
+      <div class="progress-bar">
+        <div class="fill" id="reminderProgress"></div>
+      </div>
+      <p id="reminderProgressText">You’ve completed 0 of 5 reminders this week</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!-- wins.html -->  
+
+<!DOCTYPE html>  
+
+<html lang="en">  
+
+<head>  
+
+  <meta charset="UTF-8">  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+  <title>Wins - Small Wins Tracker</title>  
+
+  <link rel="stylesheet" href="style.css">  
+
+</head>  
+
+<body>  
+
+  <nav>  
+
+    <div class="logo">  
+
+        <img src="Images/logo.PNG" alt="Logo">  
+
+        <div class="logo"></div>  
+
+    </div>  
+
+        <div class="links">  
+
+      <a href="homepage.html">Home</a>  
+
+      <a href="about.html">About</a>  
+
+      <a href="wins.html" class="active">Wins</a>  
+
+      <a href="contact.html">Contact</a>  
+
+    </div>  
+
+  </nav>  
+
+  <h3 style="text-align: center; color: #fcd94c;">Celebrate Progress</h3>
+<p style="text-align: center; color: #fcd94c; font-style: italic;">“Look how far you’ve come – one small win at a time!”</p>
+
+<div class="quote-box">
+  <p>“Small daily improvements are the key to staggering long-term results.”<br><strong>— Robin Sharma</strong></p>
+</div>
+
+<!-- Wins Input Table -->
+<div class="table-container">
+  <h3>Wins</h3>
+  <table class="input-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="winsInputTable">
+      <tr>
+        <td><input type="text" placeholder="Win Title"></td>
+        <td><input type="text" placeholder="Description"></td>
+        <td><input type="text" placeholder="Category"></td>
+        <td><input type="date"></td>
+        <td><button onclick="saveWin(this)">Save</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Reminders Input Table -->
+<div class="table-container">
+  <h3>Reminders</h3>
+  <table class="input-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="remindersInputTable">
+      <tr>
+        <td><input type="text" placeholder="Reminder Title"></td>
+        <td><input type="text" placeholder="Description"></td>
+        <td><input type="text" placeholder="Category"></td>
+        <td><input type="date"></td>
+        <td><button onclick="saveReminder(this)">Save</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
